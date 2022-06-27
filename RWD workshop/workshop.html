@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* .header,main-nav{
+        display:flex
+    } */
+     .header{
+         background-color: lightpink;
+         text-align: left;
+
+     }
+     .main-nav{
+         text-align: right;
+         text-orientation: sideways-right;
+
+     }
+
+    footer{
+      
+        background-color: lightpink;
+        font-size: 30px;
+        text-align: center;
+        
+    }
+
+    .photos{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 10px;
+    }
+    .abcd{
+        display: grid;
+        background-color: white;
+    }
+    .container{
+        
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 20px; 
+        
+        border:2px solid grey;
+       
+       
+        
+    }
+
+    .abc{
+       
+        background-color: lightgreen;
+        
+    }
+    
+    .contain{
+        
+        display: grid;
+        grid-template-columns: 2fr 1fr; 
+        column-gap: 20px; 
+        border:2px solid grey;
+      
+       
+        
+    }
+
+    .sample{
+       
+        background-color: lightblue;
+        
+    }
+</style>
+<style>
+     @media screen and(max-width:768px) {
+        .rwd{
+           orientation:portrait;
+        }
+    }
+    @media screen and(min-width:1024px) {
+        .rwd{
+           orientation: landscape;
+        }
+    }
+    @media screen and(min-width:900px) {
+        .rwd{
+            width: 65%;
+            background-color: aqua;
+        }
+    }
+    
+  
+.btn{
+    text-align: center;
+    background-color: rgb(161, 184, 228);
+
+}
+#btn1{
+    margin-top: 50px;
+    background-color: rgb(204, 162, 24);
+    font-size:24px;
+    border-radius: 4px;
+}
+</style>
+<body>
+ <div class="rwd">
+    
+    <header class="header">
+        <h1 class="logo"><a href="#">LOGO</a></h1>
+        <div class="main-nav">
+                <a href=#>Home</a>
+                <a href=#>About US</a>
+                <a href=#>Services</a>
+                <a href=#>Contact</a>
+        </div>
+    </header>
+    <br>
+    <div class="photos">
+        <div class="abcd"><img src="images/airballoon.webp" height="300px" width="780px"></div>
+        <div class="abcd"><img src="images/water.jfif"  height="300px" width="780px" alt="Image displayed"></div>
+
+    </div>
+    <br>
+    <div class="container  ">
+             <div class="abc">
+                 <h2>Sample heading 1</h2>
+                 <p>Lorem lypsum is simpl dummy test
+                    Testnet coins are distinct from actualBefore a project launches on the Ethereum blockchain (or before changes are made to the blockchain itself), a version is deployed to an Ethereum Test Network (“testnet”), which simulates Ethereum — this gives developers, the community, and you a chance to kick the tires before real assets are involved. coins, and testnet coins do not have
+                     any monetary value. This allows application
+                     developers or testers to experiment without having to use valuable coins
+                 </p>
+             </div>
+             <div class="abc">
+                <h2>Sample heading 2</h2>
+                <p>Lorem lypsum is simpl dummy test
+                   Testnet coins are distinct from actual coins, and testnet coins do not have
+                    any monetary value. This allows application Before a project launches on the Ethereum blockchain (or before changes are made to the blockchain itself), a version is deployed to an Ethereum Test Network (“testnet”), which simulates Ethereum — this gives developers, the community, and you a chance to kick the tires before real assets are involved.
+                    developers or testers to experiment without having to use valuable coins
+                </p>
+             </div>
+             <div class="abc"><h2>Sample heading 3</h2>
+                <p>Lorem lypsum is simpl dummy test
+                   Testnet coins are distinct from actual coins, and testnet coins do not have
+                    any monetary value. This allows application Before a project launches on the Ethereum blockchain (or before changes are made to the blockchain itself), a version is deployed to an Ethereum Test Network (“testnet”), which simulates Ethereum — this gives developers, the community, and you a chance to kick the tires before real assets are involved.
+                    developers or testers to experiment without having to use valuable coins
+                </p>
+            </div>
+    </div>
+    <br>
+        <div class="contain ">
+            <div class="sample">
+                <h2>Sample heading 1</h2>
+                <p>Lorem lypsum is simpl dummy test
+                Testnet coins are distinct from actualBefore a project launches on the Ethereum blockchain (or before changes are made to the blockchain itself), a version is deployed to an Ethereum Test Network (“testnet”), which simulates Ethereum — this gives developers, the community, and you a chance to kick the tires before real assets are involved. coins, and testnet coins do not have
+                    any monetary value. This allows application
+                    developers or testers to experiment without having to use valuable coins
+                </p>
+            </div>
+            <div class="btn">
+                
+               <button id="btn1" name="Click Me">Click Me</button>
+            </div>
+        </div>
+    <br>
+        <footer>All rights reserved | @2022</footer>
+</div>
+</body>
+</html>
